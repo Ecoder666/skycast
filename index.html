@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkyCast</title>
+  <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6Zck0k0dmNlfZ68btNAVQrti2NelOU47cFQ&usqp=CAU" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+  <h1 class="shine hr">Check weather of your city!</h1>
+  <div class="weather">
+    <button id="locationButton"><ion-icon name="location-outline"></ion-icon></button>
+    <input spellcheck="false" type="search" id="searchInput" placeholder="Enter Your City Name">
+    <button id="searchButton">Search</button>
+  </div>
+
+  <div id="cards" class="cards">
+    <div class="card">
+      <div class="card-content">
+        <h1 class="shine" id="name"></h1>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-content">
+        <h2 id="temp"></h2>
+        <h3 id="weather"></h3>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-content">
+        <h2 id="pressure"></h2>
+        <h3 id="humidity"></h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">WeatherApp is your go-to source for accurate and up-to-date weather information. We provide real-time data for cities worldwide, giving you detailed forecasts and current conditions. Whether you're planning a trip or just want to stay informed, WeatherApp has you covered. Trust us to deliver reliable weather data so you can make the most of your day, rain or shine.</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Categories</h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+            <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+            <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/about/">About Us</a></li>
+            <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">
+            Copyright &copy; 2017 All Rights Reserved by
+            <a href="#">VIkAS</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a class="twitter" href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a class="dribbble" href="#"><ion-icon name="logo-dribbble"></ion-icon></a></li>
+            <li><a class="linkedin" href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
